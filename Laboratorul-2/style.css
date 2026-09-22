@@ -1,0 +1,148 @@
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ee;
+    color: #23262b;
+    line-height: 1.6;
+}
+
+#container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #d9d4c7;
+}
+
+
+#header {
+    background-color: #23262b;
+    color: #ffffff;
+    padding: 25px 30px;
+}
+
+#header h1 {
+    margin: 0 0 5px 0;
+    font-size: 28px;
+}
+
+
+#meniu {
+    background-color: #3c4149;
+    padding: 12px 30px;
+}
+
+#meniu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 25px;
+    border-bottom: 2px solid transparent;
+}
+
+#meniu a:hover,
+#meniu a:focus {
+    border-bottom: 2px solid #ffd200;
+}
+
+
+#continut {
+    padding: 30px;
+}
+
+.tara {
+    border-top: 1px solid #d9d4c7;
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
+
+.tara h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.sus {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+img.foto {
+    max-width: 320px;
+    height: auto;
+    border: 1px solid #d9d4c7;
+}
+
+
+
+.steag {
+    border-collapse: collapse;   
+    border: 2px solid #23262b;
+}
+
+.steag td {
+    padding: 0;
+}
+
+
+.l10  { width: 10px; }
+.l20  { width: 20px; }
+.l50  { width: 50px; }
+.l60  { width: 60px; }
+.l90  { width: 90px; }
+.l100 { width: 100px; }
+.l120 { width: 120px; }
+
+.i10  { height: 10px; }
+.i20  { height: 20px; }
+.i40  { height: 40px; }
+.i60  { height: 60px; }
+.i200 { height: 200px; }
+
+
+.md-albastru { background-color: #0046AE; }
+.md-galben   { background-color: #FFD200; }
+.md-rosu     { background-color: #CC092F; }
+
+
+.no-rosu     { background-color: #BA0C2F; }
+.no-alb      { background-color: #FFFFFF; }
+.no-albastru { background-color: #00205B; }
+
+
+.se-albastru { background-color: #006AA7; }
+.se-galben   { background-color: #FECC00; }
+
+
+
+#tabel-comparativ {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#tabel-comparativ th,
+#tabel-comparativ td {
+    border: 1px solid #b9b3a3;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+#tabel-comparativ th {
+    background-color: #eceadf;
+}
+
+
+#footer {
+    background-color: #23262b;
+    color: #ffffff;
+    padding: 20px 30px;
+    font-size: 14px;
+}
+
+td img {
+align-self: center;
+display: flex;
+justify-self: center;
+}
