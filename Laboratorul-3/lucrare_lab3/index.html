@@ -1,0 +1,264 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="ro">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Lucrare de laborator despre funcții, obiecte și metode în JavaScript." name="description"/>
+  <title>
+   Laborator 3 — JavaScript
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="script.js">
+  </script>
+ </head>
+ <body>
+  <a class="skip-link" href="#continut">
+   Sari la conținut
+  </a>
+  <header class="hero">
+   <div class="hero__inner">
+    <p class="eyebrow">
+     Programarea client-side a site-urilor Web
+    </p>
+    <h1>
+     Obiecte, funcții și metode
+     <span>
+      în JavaScript
+     </span>
+    </h1>
+   </div>
+   <div aria-hidden="true" class="hero__mark">
+    JS
+   </div>
+  </header>
+  <main class="container" id="continut">
+   <section aria-labelledby="sum-title" class="section">
+    <div class="section-heading">
+     <span aria-hidden="true" class="section-number">
+      01
+     </span>
+     <div>
+      <p class="eyebrow">
+       Exercițiul 1 · Funcție
+      </p>
+      <h2 id="sum-title">
+       Calculator de sumă
+      </h2>
+     </div>
+    </div>
+    <div class="card sum-card">
+     <form class="sum-form" id="sum-form">
+      <label for="number-a">
+       Primul număr
+       <input autocomplete="off" id="number-a" name="a" required="" step="any" type="number" value="12"/>
+      </label>
+      <span aria-hidden="true" class="operator">
+       +
+      </span>
+      <label for="number-b">
+       Al doilea număr
+       <input autocomplete="off" id="number-b" name="b" required="" step="any" type="number" value="8"/>
+      </label>
+      <button class="button button--primary" type="submit">
+       Calculează suma
+      </button>
+     </form>
+     <p aria-live="polite" class="result-line" id="sum-result">
+      Rezultatul va apărea aici.
+     </p>
+    </div>
+   </section>
+   <section aria-labelledby="student-title" class="section">
+    <div class="section-heading">
+     <span aria-hidden="true" class="section-number">
+      02
+     </span>
+     <div>
+      <p class="eyebrow">
+       Exercițiul 2 · Obiect și metodă
+      </p>
+      <h2 id="student-title">
+       Obiectul student
+      </h2>
+     </div>
+    </div>
+    <div class="card student-card">
+     <div aria-hidden="true" class="student-avatar">
+      A
+     </div>
+     <div class="student-info">
+      <h3>
+       Alexandra Popescu
+      </h3>
+      <p aria-live="polite" class="muted" id="student-introduction">
+       —
+      </p>
+      <div class="student-meta">
+       <span>
+        Vârsta:
+        <strong id="student-age">
+         17
+        </strong>
+        ani
+       </span>
+       <span>
+        Nota:
+        <strong id="student-grade">
+         9
+        </strong>
+       </span>
+      </div>
+     </div>
+     <div class="student-actions">
+      <button class="button button--secondary" id="introduce-button" type="button">
+       Prezintă elevul
+      </button>
+      <button class="button button--quiet" id="grade-button" type="button">
+       Modifică nota la 10
+      </button>
+     </div>
+    </div>
+   </section>
+   <section aria-labelledby="game-title" class="section" id="joc">
+    <div class="section-heading">
+     <span aria-hidden="true" class="section-number">
+      03
+     </span>
+     <div>
+      <p class="eyebrow">
+       Exercițiul 3 · Aplicație interactivă
+      </p>
+      <h2 id="game-title">
+       Piatra, hârtia, foarfeca
+      </h2>
+     </div>
+    </div>
+    <div class="game-layout">
+     <div class="card game-main">
+      <div class="game-topline">
+       <span aria-hidden="true" class="live-dot">
+       </span>
+       <span>
+        2 jucători · primul la 5 victorii
+       </span>
+      </div>
+      <p class="game-prompt" id="game-prompt">
+       Jucătorul 1, alege:
+      </p>
+      <div aria-label="Alege piatra, hârtia sau foarfeca" class="choice-buttons" role="group">
+       <button class="choice-button" data-choice="piatra" type="button">
+        <span aria-hidden="true">
+         ✊
+        </span>
+        <span>
+         Piatra
+        </span>
+       </button>
+       <button class="choice-button" data-choice="hartia" type="button">
+        <span aria-hidden="true">
+         ✋
+        </span>
+        <span>
+         Hârtia
+        </span>
+       </button>
+       <button class="choice-button" data-choice="foarfeca" type="button">
+        <span aria-hidden="true">
+         ✌️
+        </span>
+        <span>
+         Foarfeca
+        </span>
+       </button>
+      </div>
+      <div aria-atomic="true" aria-live="polite" class="round-result">
+       <div class="versus">
+        <div>
+         <span class="result-label">
+          JUCĂTORUL 1
+         </span>
+         <strong id="player-choice">
+          —
+         </strong>
+        </div>
+        <span aria-hidden="true" class="versus-mark">
+         VS
+        </span>
+        <div>
+         <span class="result-label">
+          JUCĂTORUL 2
+         </span>
+         <strong id="player-two-choice">
+          —
+         </strong>
+        </div>
+       </div>
+       <p class="round-message" id="round-message">
+        Rândul jucătorului 1.
+       </p>
+       <p class="leader-message" id="leader-message">
+        Scor egal.
+       </p>
+      </div>
+      <button class="button button--secondary advance-button" id="advance-button" hidden type="button">Jucătorul 2 → alege</button>
+      <button class="button button--quiet reset-button" id="new-game-button" type="button">
+       <span aria-hidden="true">
+        ↻
+       </span>
+       Joc nou
+      </button>
+     </div>
+     <aside aria-label="Tabela de scor" class="card score-card">
+      <p class="eyebrow">
+       Tabela de scor
+      </p>
+      <h3>
+       Scor curent
+      </h3>
+      <div class="score-row">
+       <span>
+        Jucătorul 1
+       </span>
+       <strong id="player-score">
+        0
+       </strong>
+      </div>
+      <div class="score-row">
+       <span>
+        Jucătorul 2
+       </span>
+       <strong id="player-two-score">
+        0
+       </strong>
+      </div>
+      <div class="score-row score-row--draw">
+       <span>
+        Egalități
+       </span>
+       <strong id="draw-score">
+        0
+       </strong>
+      </div>
+      <div class="rounds-total">
+       <span>
+        Runde jucate
+       </span>
+       <strong id="rounds-played">
+        0
+       </strong>
+      </div>
+     </aside>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <span>
+    Lucrare de laborator · JavaScript
+   </span>
+   <span>
+    HTML · CSS · JavaScript
+   </span>
+  </footer>
+ </body>
+</html>
