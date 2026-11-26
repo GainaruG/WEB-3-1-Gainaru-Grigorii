@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lista de studenți – Flexbox</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Lista de studenți</h1>
+  <p class="sub">Gestionarea listei și aranjarea cardurilor cu CSS Flexbox</p>
+
+  <div class="panels">
+    <section class="panel">
+      <h2>Adaugă student</h2>
+      <form id="studentForm" novalidate>
+        <label>Nume complet <input id="name" type="text" placeholder="Ex: Maria Lungu"></label>
+        <label>Grupa <input id="group" type="text" placeholder="Ex: SI-231"></label>
+        <label>Vârsta <input id="age" type="number" placeholder="14–100" step="1"></label>
+        <label>Specialitatea <input id="specialty" type="text" placeholder="Ex: Programare"></label>
+        <label>Avatar
+          <select id="avatar">
+            <option>👩‍💻</option><option>👨‍💻</option><option>👩‍🎓</option><option>👨‍🎓</option>
+            <option>🧑‍🔬</option><option>🧑‍🎨</option>
+          </select>
+        </label>
+        <button class="primary" type="submit">Adaugă</button>
+        <p id="formError" role="alert"></p>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Controale Flexbox</h2>
+      <div class="group"><span>justify-content</span>
+        <div class="btns" data-prop="justifyContent">
+          <button class="active">flex-start</button><button>center</button><button>flex-end</button>
+          <button>space-between</button><button>space-around</button><button>space-evenly</button>
+        </div></div>
+      <div class="group"><span>align-items</span>
+        <div class="btns" data-prop="alignItems">
+          <button>flex-start</button><button>center</button><button>flex-end</button>
+          <button>baseline</button><button class="active">stretch</button>
+        </div></div>
+      <div class="group"><span>flex-wrap</span>
+        <div class="btns" data-prop="flexWrap">
+          <button class="active">wrap</button><button>nowrap</button>
+        </div></div>
+      <div class="group"><span>gap: <b id="gapValue">16</b> px</span>
+        <div class="gap-row"><input id="gap" type="range" min="0" max="80" value="16"></div></div>
+    </section>
+  </div>
+
+  <p class="count" style="margin-top:18px">Număr de studenți: <b id="count">0</b></p>
+  <div id="list" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
